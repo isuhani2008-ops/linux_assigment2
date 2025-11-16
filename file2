@@ -1,7 +1,81 @@
-suhani@lenovo:~$ mkdir myfolder1
+suhani@lenovo:~$ touch test1.txt
+suhani@lenovo:~$ chmod 755 script.sh
+suhani@lenovo:~$ sudo chown suhani:suhani index.txt
+chown: cannot access 'index.txt': No such file or directory
+suhani@lenovo:~$ touch test.txt
+suhani@lenovo:~$ chmod 755 script.sh
+suhani@lenovo:~$ sudo chown suhani:suhani test.txtsuhani@lenovo:~$ mkdir myfolder1
 suhani@lenovo:~$ touch index.txt
 suhani@lenovo:~$ cp index.txt backup.txt
 suhani@lenovo:~$ mv index.txt index_1.txt
 suhani@lenovo:~$ rm index_1.txt
 suhani@lenovo:~$ cp index_2.txt backup.txt
 cp: cannot stat 'index_2.txt': No such file or directory
+suhani@lenovo:~$ ps
+    PID TTY          TIME CMD
+   8023 pts/6    00:00:00 bash
+   8390 pts/6    00:00:00 ps
+suhani@lenovo:~$ top
+top - 04:36:27 up  7:32,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   6601.2 total,   5788.4 free,    697.9 used,    272.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5903.3 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22236  13056   9600 S   0.0   0.2   0:07.38 systemd
+      2 root      20   0    3072   1664   1664 S   0.0   0.0   0:00.16 init-systemd(Ub
+      6 root      20   0    3088   1920   1920 S   0.0   0.0   0:00.01 init
+    187 root      20   0    4236   2432   2304 S   0.0   0.0   0:00.11 cron
+    188 message+  20   0    9880   5120   4480 S   0.0   0.1   0:01.35 dbus-daemon
+    195 root      20   0   17964   8320   7424 S   0.0   0.1   0:00.63 systemd-logind
+    216 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.01 agetty
+    222 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.01 agetty
+    230 root      20   0  107032  22400  13184 S   0.0   0.3   0:00.10 unattended-upgr
+    383 root      20   0    3080    896    896 S   0.0   0.0   0:00.00 SessionLeader
+    385 root      20   0    3096   1152   1024 S   0.0   0.0   0:00.00 Relay(388)
+    388 suhani    20   0    6076   4864   3456 S   0.0   0.1   0:00.03 bash
+    487 root      20   0    6692   4224   3584 S   0.0   0.1   0:00.01 login
+    530 suhani    20   0   20008  11008   9216 S   0.0   0.2   0:00.86 systemd
+    531 suhani    20   0   21148   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)
+    557 suhani    20   0    6056   4736   3328 S   0.0   0.1   0:00.04 bash
+    659 root      20   0    3080   1028    896 S   0.0   0.0   0:00.00 SessionLeader
+    660 root      20   0    3096   1160   1024 S   0.0   0.0   0:00.06 Relay(662)
+    662 suhani    20   0    6068   5120   3456 S   0.0   0.1   0:00.06 bash
+   1288 polkitd   20   0  309116   8636   7552 S   0.0   0.1   0:01.17 polkitd
+   1859 root      19  -1   50584  15744  14848 S   0.0   0.2   0:02.74 systemd-journal
+   3426 systemd+  20   0   91024   7680   6912 S   0.0   0.1   0:01.05 systemd-timesyn
+   3479 root      20   0   25248   6144   4864 S   0.0   0.1   0:06.19 systemd-udevd
+   3554 systemd+  20   0   21456  13056  10880 S   0.0   0.2   0:00.27 systemd-resolve
+   4237 syslog    20   0  222508   5248   4480 S   0.0   0.1   0:00.24 rsyslogd
+   4322 root      20   0    3080   1028    896 S   0.0   0.0   0:00.00 SessionLeader
+   4323 root      20   0    3096   1160   1024 S   0.0   0.0   0:00.00 Relay(4327)
+   4327 suhani    20   0    6072   5248   3584 S   0.0   0.1   0:00.04 bash
+   4397 root      20   0    3080   1028    896 S   0.0   0.0   0:00.00 SessionLeader
+   4398 root      20   0    3096   1160   1024 S   0.0   0.0   0:00.00 Relay(4402)
+   4402 suhani    20   0    6072   5248   3584 S   0.0   0.1   0:00.03 bash
+   5281 root      20   0    3080   1028    896 S   0.0   0.0   0:00.00 SessionLeader
+   5282 root      20   0    3096   1160   1024 S   0.0   0.0   0:00.08 Relay(5287)
+   5287 suhani    20   0    6072   5248   3584 S   0.0   0.1   0:00.13 bash
+   6137 root      20   0  377360   6244   1280 S   0.0   0.1   0:00.23 snapfuse
+   6143 root      20   0 2440844  38252  23552 S   0.0   0.6   0:12.82 snapd
+   6345 root      20   0  153068   1412   1280 S   0.0   0.0   0:00.00 snapfuse
+   6498 root      20   0  153068   1412   1280 S   0.0   0.0   0:00.00 snapfuse
+   8016 root      20   0    3080   1028    896 S   0.0   0.0   0:00.00 SessionLeader
+   8018 root      20   0    3096   1032    896 S   0.0   0.0   0:00.27 Relay(8023)
+   8023 suhani    20   0    6072   5248   3584 S   0.0   0.1   0:00.16 bash
+   8391 suhani    20   0    9320   5632   3456 R   0.0   0.1   0:01.31 top
+suhani@lenovo:~$ kill -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+63) SIGRTMAX-1  64) SIGRTMAX
