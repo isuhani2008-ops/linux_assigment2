@@ -1,0 +1,7 @@
+suhani@lenovo:~$ mkdir myfolder1
+suhani@lenovo:~$ touch index.txt
+suhani@lenovo:~$ cp index.txt backup.txt
+suhani@lenovo:~$ mv index.txt index_1.txt
+suhani@lenovo:~$ rm index_1.txt
+suhani@lenovo:~$ cp index_2.txt backup.txt
+cp: cannot stat 'index_2.txt': No such file or directory
